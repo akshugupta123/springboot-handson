@@ -1,0 +1,15 @@
+CREATE TABLE Passenger_Details (
+    Passenger_id INT PRIMARY KEY,
+    Passenger_name VARCHAR(255),
+    Passenger_dob DATE,
+    Passenger_phone VARCHAR(15),
+    Passenger_email VARCHAR(255)
+);
+
+INSERT INTO Passenger_Details (Passenger_id, Passenger_name, Passenger_dob, Passenger_phone, Passenger_email)
+VALUES
+(1234, 'Anu', '2000-12-05', '9876543266', 'anu@gmail.com'),
+(1235, 'Vikas', '2001-01-05', '8876543266', 'vikas@gmail.com'),
+(1236, 'Sharmi', '2011-02-15', '9666543266', 'sharmi@gmail.com'),
+(1237, 'Nikitha', '1990-12-05', '9076543266', 'nikitha@gmail.com'),
+(1238, 'Vinu', '1999-06-05', '9855432066', 'vinu@gmail.com');

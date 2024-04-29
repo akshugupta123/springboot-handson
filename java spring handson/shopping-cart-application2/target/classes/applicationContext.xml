@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+   
+    <!-- Define beans with constructor injection -->
+    <bean id="battery" class="com.example.shop.pojo.Battery">
+        <constructor-arg value="1"/>
+        <constructor-arg value="AAA Battery"/>
+        <constructor-arg value="2.5"/>
+        <constructor-arg value="true"/>
+    </bean>
+    
+    <bean id="disc" class="com.example.shop.pojo.Disc">
+        <constructor-arg value="2"/>
+        <constructor-arg value="CD"/>
+        <constructor-arg value="5.0"/>
+        <constructor-arg value="700"/>
+    </bean>
+</beans>

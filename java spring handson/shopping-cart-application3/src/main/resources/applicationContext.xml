@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- PropertyPlaceholderConfigurer to read discounts.properties -->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="discounts.properties"/>
+    </bean>
+
+    <!-- Define beans with discount properties -->
+    <bean id="battery" class="com.example.shop.pojo.Battery">
+        <property name="discount" value="${summer.discount}"/>
+    </bean>
+    <bean id="disc" class="com.example.shop.pojo.Disc">
+        <property name="discount" value="${endofyear.discount}"/>
+    </bean>
+
+</beans>
